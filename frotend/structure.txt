@@ -1,0 +1,41 @@
+Folder PATH listing
+Volume serial number is 462F-05AE
+C:.
+¦   .gitignore
+¦   eslint.config.js
+¦   index.html
+¦   package-lock.json
+¦   package.json
+¦   README.md
+¦   structure.txt
+¦   tsconfig.app.json
+¦   tsconfig.json
+¦   tsconfig.node.json
+¦   vite.config.ts
+¦            
++---public
+¦       vite.svg
+¦       
++---src
+    ¦   App.css
+    ¦   App.tsx
+    ¦   index.css
+    ¦   main.tsx
+    ¦   vite-env.d.ts
+    ¦   
+    +---assets
+    ¦       auth0.svg
+    ¦       AWS.svg
+    ¦       Firebase.svg
+    ¦       logo.png
+    ¦       react.svg
+    ¦       supabase.svg
+    ¦       
+    +---components
+    ¦       FormValidator.tsx
+    ¦       PasswordStrength.tsx
+    ¦       
+    +---pages
+            Login.tsx
+            Register.tsx
+            

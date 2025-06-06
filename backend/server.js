@@ -16,7 +16,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 // Configure CORS
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://10.0.4.203:5173'], // Allow both localhost and specific IP
+  origin: ['http://localhost:5173', 'http://10.0.4.203:5173', 'http://13.60.156.93', 'http://13.60.156.93:80'], // Allow both localhost and specific IPs
   credentials: true // If you're using cookies for authentication
 }));
 // Middleware
@@ -45,6 +45,7 @@ const syncDatabase = async () => {
       console.log(`Server running on port ${PORT}`);
       console.log(`- Local: http://localhost:${PORT}`);
       console.log(`- Network: http://10.0.4.203:${PORT}`);
+      console.log(`- Production: http://13.60.156.93:${PORT}`);
     });
   } catch (error) {
     console.error('Error synchronizing database:', error);

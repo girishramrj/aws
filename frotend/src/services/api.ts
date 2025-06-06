@@ -7,9 +7,11 @@ const getApiUrl = () => {
     return 'http://localhost:3000/api';
   } else if (hostname === '10.0.4.203') {
     return 'http://10.0.4.203:3000/api';
+  } else if (hostname === '13.60.156.93') {
+    return 'http://13.60.156.93:3000/api';
   }
-  // Default fallback
-  return 'http://localhost:3000/api';
+  // Default fallback - use production server
+  return 'http://13.60.156.93:3000/api';
 };
 
 const API_URL = getApiUrl();
